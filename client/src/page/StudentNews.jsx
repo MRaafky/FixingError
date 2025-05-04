@@ -5,7 +5,7 @@ function StudentNews() {
     const [news, setNews] = useState()
 
     axios
-    .get(`http://localhost:8000/StudentNews`)
+    .get(`http://localhost:3000/social_action_news`)
     .then((res) => {
         setNews(res.data)
     })

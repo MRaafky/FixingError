@@ -13,6 +13,9 @@ mongoose
   });
 
 app.use(express.json());
+
+app.use("/", require("./router/studentnews.route"));
+
 const seedsNews = require("./seeds/studentsnews.seed");
 app.use("/StudentNews", seedsNews);
 
